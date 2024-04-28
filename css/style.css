@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(11, 11, 11);
+    background: radial-gradient(circle, rgb(19, 19, 19) 0%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 1) 80%, rgba(255, 0, 0, 1) 82%, rgba(255, 255, 255, 1) 83%, rgba(255, 0, 0, 1) 84%, rgba(131, 23, 23, 1) 85%, rgb(34, 34, 34) 88%);
+
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quiz_container {
+    border: 10px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.quiz_container:hover {
+    transform: scale(105%);
+    background-color: rgb(50, 50, 50);
+}
+
+.question {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 15px;
+
+    border: 5px solid black;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.question:hover {
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 0, 0);
+    transform: scale(120%);
+    font-style: italic;
+}
+
+
+
+.result {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn {
+    font-size: 43px;
+    margin-top: 30px;
+    background-color: rgb(255, 240, 240);
+    transition: background-color 0.5s, transform 0.5s;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 10px;
+    border: 5px solid black;
+    margin-bottom: 15px;
+
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(117%);
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.btn:active {
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+}
